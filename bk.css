@@ -1,0 +1,172 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --GrayishBlue: hsl(217, 19%, 35%);
+  --DarkBlue: hsl(214, 17%, 51%);
+  --GrayishLightBlue: hsl(212, 23%, 69%);
+  --LightBlue: hsl(210, 46%, 95%);
+}
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: var(--LightBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+main {
+  max-width: 50%;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  position: relative;
+  
+}
+.MainImg {
+    flex-basis: 40%;
+    flex-grow: 1;
+}
+.MainImg img {
+  width: 100%;
+  height: 100%;
+ border-radius: 1rem 0 0 1rem;
+}
+.content {
+  flex-grow: 2;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-basis: 50%;
+}
+.content .text h2 {
+  font-size: 19px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  color: var(--GrayishBlue);
+}
+.content .text p {
+  font-size: 14px;
+  line-height: 1.2rem;
+  color: var(--DarkBlue);
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.images {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.person .images img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.name div p:first-child {
+  margin-bottom: 0.2rem;
+  font-weight: bold;
+  color: var(--GrayishBlue);
+}
+.name .date {
+  color: var(--DarkBlue);
+}
+button {
+  background-color: var(--GrayishLightBlue);
+  outline: none;
+  border: none;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+ #buttonClose{
+    display: none;
+}
+.share {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--LightBlue);
+  background-color: var(--GrayishBlue);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  letter-spacing: 0.2rem;
+  position: absolute;
+  top: 47%;
+  left: 75%;
+
+}
+.share .shareSvg {
+    width: 50%;
+    display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.share .traingle {
+  width: 20px;
+  height: 20px;
+  background-color: var(--GrayishBlue);
+  position: absolute;
+  top: 75%;
+  left: 43%;
+  transform: rotateY(0deg) rotate(45deg);
+}
+
+/* ...............375px........... */
+/* @media  screen and (max-width:375px) {
+
+    body{
+        min-height: 150vh;
+    }
+    main{
+        max-width: 85%;
+        display: flex;
+        flex-direction:column;;
+        background-color: #ffffff;
+        border-radius: 1rem;
+        position: relative;
+        min-height: 100vh;
+
+    }
+    
+    .MainImg img {
+        width: 100%;
+       border-radius: 1rem 1rem 0 0;
+    }
+    .share {
+        display: block;
+       
+      }
+    .share  #buttonCloseone {
+        background-color: var(--GrayishLightBlue);
+        outline: none;
+        border: none;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+       
+    }
+   
+} */

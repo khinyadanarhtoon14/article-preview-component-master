@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      
+        <img src="./images/drawers.jpg" class="mainImg" alt="" width="300px"  />
+    
+      
+      <div class="text">
+        <div class="heading">
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </div>
+        <div class="subText">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </div>
+
+        <div class="person">
+          <div class="images">
+            <img src="./images/avatar-michelle.jpg" alt="" width="40px" height="40px"/>
+            <div class="name">
+              <p>Michelle Appleton</p>
+              <p>28 Jun 2020</p>
+            </div>
+          </div>
+          <div class="btn-group">
+            <button id="button">
+              <img src="./images/icon-share.svg" alt="" />
+            </button>
+            <button id="buttonClose">
+              <img src="./images/icon-share.svg" alt="" />
+            </button>
+          
+          
+
+          <div class="share">
+            SHARE
+            <div class="svgImg">
+              <img src="./images/icon-facebook.svg" alt="" />
+              <img src="./images/icon-twitter.svg" alt="" />
+              <img src="./images/icon-pinterest.svg" alt="" />
+            </div>
+
+          <button id="buttonCloseOne">
+            <img src="./images/icon-share.svg" alt="" />
+          </button>
+          <div class="triangle"></div>
+          </div>
+          
+          </div>
+          
+        </div>
+      </div>
+    </div>
+      <script >
+        const button=document.querySelector('#button');
+        const buttonClose=document.querySelector('#buttonClose');
+        const buttonCloseOne=document.querySelector('#buttonCloseOne');
+        const share=document.querySelector('.share');
+        button.addEventListener('click',() => {
+          share.style.display='flex';
+          buttonClose.style.display='inline-block';
+          button.style.display='none';
+        })
+
+        function init(){
+          share.style.display='none';
+          buttonClose.style.display='none';
+          button.style.display='inline-block';
+        }
+        buttonClose.addEventListener('click',init);
+        buttonCloseOne.addEventListener('click',init);
+        
+      </script>
+  </body>
+</html>
